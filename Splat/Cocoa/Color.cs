@@ -37,7 +37,7 @@ namespace Splat
     {
         public static NSColor ToNative(this System.Drawing.Color This)
         {
-            return NSColor.FromSrgb((float)This.R / 255.0f, (float)This.G / 255.0f, This.B / 255.0f, This.A / 255.0f);
+			return NSColor.FromCalibratedRgba((float)This.R / 255.0f, (float)This.G / 255.0f, This.B / 255.0f, This.A / 255.0f);
         }
 
         public static System.Drawing.Color FromNative(this NSColor This)
